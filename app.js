@@ -19,6 +19,10 @@ fetch('https://digimon-api.herokuapp.com/api/digimon').then(function (respone) {
 })
 
 function creatcard(digimon) {
+    
+
+    document.body.appendChild(document.getElementById("container"))
+
     let div = document.createElement("div");
   
     div.style.width = "200px"
@@ -29,7 +33,7 @@ function creatcard(digimon) {
     div.style.border = "5px solid black"
   
     div.style.margin = "10px"
-    document.body.appendChild(document.getElementById("main"))
+
     
     let img = document.createElement("img");
     img.src = digimon.image

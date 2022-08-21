@@ -1,6 +1,9 @@
-#main {
-    display: flex;
-    flex-wrap: nowrap;
+#container {
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
 #main div {
